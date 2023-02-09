@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Autoservis</title>
+</head>
+<body>
+    <header>
+        <h1>AutoServis</h1>
+        <p class="text">Jsme profesionálové a automobiloví nadšenci s maximálním zaměřením na kvalitu služeb a tím i Vaši spokojenost. 
+            Záleží nám na tom, abychom si zákazníka udrželi, a proto ke každému z Vás přistupujeme individuálně. 
+            Pracujeme na přání, a proto velkou část naší činnosti zabírá i vlastní vývoj. 
+            Po mnoha letech v oboru víme kam zajít a už máme ty správné kontakty, abychom Vám dodali ty nejlepší služby a výrobky.
+            Umíme být Vaším one-stop shopem pro vše, co se týká Vašeho auta. 
+            Jsme schopni zajistit veškeré činnosti, které jsou okolo aut potřeba. 
+            Disponujeme zázemím velkého servisu. 
+            A na každou složitější záležitost máme léty prověřeného specialistu. 
+            Zajistíme splnění Vašich snů.
+        </p>
+    </header>
+    <main>
+        <form class="AutoForm">
+            <h3><u>Pridani auta</u></h3>
+            <label for="znacka">Znacka:</label><br />
+            <input
+              type="text"
+              id="znacka"
+              name="znacka"
+              placeholder="znacka..."
+              required
+            /><br />
+            <label for="model">Model:</label><br />
+            <input
+              type="text"
+              id="model"
+              name="model"
+              placeholder="model..."
+              required
+            /><br />
+            <label for="datVyr">Datum vyroby:</label><br />
+            <input type="date" id="datVyr" name="datVyr" required /><br />
+            <label for="najeteKm">Najete kilometry:</label><br />
+            <input
+            type="number"
+            id="najeteKm"
+            name="najeteKm"
+            placeholder="najete kilometry..."
+            min="0"
+            required
+            /><br />
+            <input type="submit" value="Pridat auto" id="submitAuto" />
+          </form>
+    </main>
+    <aside>
+        <h3><u>Metody</u></h3>
+        <button id="allCars" type="button">
+            Vsechny auta v autoservisu.</button
+        ><br />
+        <p class="vypis"></p>
+    </aside>
+    <footer>
+        <button id="clear" type="button">Smazat vsechno (i local storage)</button><br>
+        <input
+            type="number"
+            id="index"
+            name="index"
+            placeholder="index auta k smazani..."
+            min="0"
+            required
+            /><br />
+            <button type="button" id="removeCar">Smazat auto na zvolenem indexu</button><br>
+            <img src="img/enyaq.jpg" alt="Skoda Enyaq">
+
+    </footer>
+    
+</body>
+<script src="main.js"></script>
+</html>
